@@ -1,0 +1,120 @@
+
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.flashcard {
+  background: white;
+  border-radius: 16px;
+  padding: 50px 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #4a6cf7;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.quiz {
+  margin-top: 40px;
+}
+
+#choices button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  background: white;
+  color: #333;
+  border: 2px solid #4a6cf7;
+}
+
+#choices button:hover {
+  background: #eef1ff;
+}
+
+body.dark .flashcard {
+  background: #2a2a3c;
+}
+
+body.dark #choices button {
+  background: #2a2a3c;
+  color: #eee;
+}
+
+.speaking {
+  margin-top: 40px;
+}
+
+#micBtn.listening {
+  background: #e53935;
+}
+
+#heard {
+  color: #666;
+}
+
+body.dark #heard {
+  color: #bbb;
+}
+
+.speaking {
+  margin-top: 40px;
+}
+
+#micBtn.listening {
+  background: #e53935;
+}
+
+#heard {
+  color: #666;
+}
+
+body.dark #heard {
+  color: #bbb;
+}
+
+.toolbar {
+  margin-bottom: 16px;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#resetBtn {
+  margin-top: 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #999;
+}

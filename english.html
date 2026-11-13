@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เรียนภาษาอังกฤษ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="english.css">
+</head>
+<body>
+    
+  <nav id="mainNav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="english.html">เรียนอังกฤษ</a>
+     <a href="english.html">คำศัพท์</a>
+  <a href="dialogue.html">บทสนทนา</a>
+  </nav>
+
+  <header class="hero">
+    <h1>เรียนคำศัพท์ภาษาอังกฤษ</h1>
+    <p>กดการ์ดเพื่อดูคำแปล กดลำโพงเพื่อฟังเสียง</p>
+  </header>
+
+  <main>
+    <div class="toolbar">
+  <label for="category">หมวด:</label>
+  <select id="category"></select>
+</div>
+
+<div class="scoreboard">
+  <span>ฝึกพูดถูก: <b id="speakScore">0</b></span>
+  <span>ตอบคำถามถูก: <b id="quizScore">0</b></span>
+  <button id="resetBtn">รีเซ็ตคะแนน</button>
+</div>
+
+    <p id="counter"></p>
+
+    <div id="flashcard" class="flashcard">
+      <div id="cardText" class="card-text"></div>
+      <small id="cardHint">แตะเพื่อดูคำแปล</small>
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn">ก่อนหน้า</button>
+      <button id="speakBtn">🔊 ฟังเสียง</button>
+      <button id="nextBtn">ถัดไป</button>
+    </div>
+
+    <section class="quiz">
+      <h2>ทดสอบตัวเอง</h2>
+      <p id="question"></p>
+      <div id="choices"></div>
+      <p id="quizResult"></p>
+    </section>
+
+    <section class="speaking">
+  <h2>ฝึกพูด</h2>
+  <p>กดไมค์แล้วพูดคำที่อยู่บนการ์ด</p>
+  <button id="micBtn">🎤 กดแล้วพูด</button>
+  <p id="heard"></p>
+  <p id="speakResult"></p>
+</section>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="english.js"></script>
+  <script src="words.js"></script>
+<script src="english.js"></script>
+</body>
+</html>

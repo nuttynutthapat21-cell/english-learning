@@ -1,0 +1,139 @@
+
+
+:root {
+  --brand: #4a6cf7;
+  --brand-2: #8a5cf6;
+  --bg: #f4f4f9;
+  --card: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --border: #dddddd;
+}
+
+body.dark {
+  --bg: #1e1e2e;
+  --card: #2a2a3c;
+  --text: #eeeeee;
+  --muted: #bbbbbb;
+  --border: #44445a;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* เมนูบน */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 12px 16px;
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--brand);
+  background: rgba(74, 108, 247, 0.12);
+}
+
+nav .brand {
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.theme-btn {
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+/* ส่วนหัว */
+.hero {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+}
+
+/* ปุ่ม */
+button {
+  background: var(--brand);
+  color: white;
+  font-family: inherit;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* การ์ดและกล่องต่างๆ ใช้สีกลาง */
+.flashcard,
+.stat,
+.lesson,
+.bubble.staff,
+#choices button {
+  background: var(--card);
+  color: var(--text);
+}
+
+#choices button {
+  border-color: var(--brand);
+}
+
+select {
+  background: var(--card);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.card-text,
+.stat-number,
+.lesson h3 {
+  color: var(--brand);
+}
+
+#heard {
+  color: var(--muted);
+}
+
+/* รองรับมือถือ */
+.controls {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .card-text {
+    font-size: 1.8rem;
+  }
+
+  .stat {
+    min-width: 100px;
+    padding: 14px 18px;
+  }
+}

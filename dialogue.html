@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ฝึกพูดและเรียนคำศัพท์ภาษาอังกฤษฟรี ผ่านแฟลชการ์ดและบทสนทนา">
+  <title>คำศัพท์ | SpeakUp</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗣️</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="english.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+  <nav id="mainNav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="english.html">คำศัพท์</a>
+    <a href="dialogue.html">บทสนทนา</a>
+  </nav>
+
+  <header class="hero">
+    <h1>ฝึกบทสนทนา</h1>
+    <p>คุณคือ <b>ลูกค้า</b> ฟังพนักงานพูด แล้วตอบกลับเป็นภาษาอังกฤษ</p>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <label for="scenario">สถานการณ์:</label>
+      <select id="scenario"></select>
+    </div>
+
+    <div id="chat"></div>
+
+    <div class="controls">
+      <button id="startBtn">▶ เริ่มบทสนทนา</button>
+    </div>
+
+    <p id="status"></p>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="dialogue.js"></script>
+</body>
+</html>

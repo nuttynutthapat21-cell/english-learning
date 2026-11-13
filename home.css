@@ -1,0 +1,97 @@
+
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+nav button {
+  padding: 4px 10px;
+  margin: 0;
+  background: transparent;
+  font-size: 18px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 18px 28px;
+  min-width: 140px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #4a6cf7;
+}
+
+.goal {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bar {
+  height: 14px;
+  background: #dde2f5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #4a6cf7, #8a5cf6);
+  transition: width 0.6s;
+}
+
+.lessons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.lesson {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.lesson:hover {
+  transform: translateY(-6px);
+}
+
+.lesson h3 {
+  margin-top: 0;
+  color: #4a6cf7;
+}
+
+body.dark .stat,
+body.dark .lesson {
+  background: #2a2a3c;
+}
+
+body.dark .bar {
+  background: #3a3a55;
+}
